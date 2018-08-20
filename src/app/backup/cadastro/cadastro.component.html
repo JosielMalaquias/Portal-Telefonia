@@ -1,0 +1,108 @@
+<div class="content p-3">
+
+	<div class="html ui top attached segment">
+	<div class="ui top attached label"><i class="right floated fab fa-wpforms" data-toggle="collapse" href="#collapseExample"></i> Novo Backup</div>
+
+<form class="ui form " id="collapseExample">
+  <h4 class="ui dividing header">Informações do Aparelho</h4>
+  <div class="field">
+
+  <div class="four fields">
+    <div class="field">
+      <label>Unidade</label>
+      <select class="ui fluid dropdown">
+        <option value="">Unidade</option>
+      </select>
+    </div>
+  </div>
+  <div class="four fields">
+    <div class="field">
+      <label>Tipo de Recurso</label>
+      <select class="ui fluid dropdown">
+        <option value="">Recurso</option>
+        <option value="smartphone">Smartphone</option>
+        <option value="celular">Celular</option>
+        <option value="tablet">Tablet</option>
+      </select>
+    </div>
+</div>
+  <div class="four fields">
+    <div class="field">
+      <label>Marca</label>
+      <select class="ui fluid dropdown">
+        <option value="">Marca</option>
+        <option value="samsung">Samsung</option>
+        <option value="apple">Apple</option>
+        <option value="positivo">Positivo</option>
+      </select>
+    </div>
+  </div>
+  <div class="four fields">
+    <div class="field">
+      <label>Modelo</label>
+      <select class="ui fluid dropdown">
+        <option value="">Modelo</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Imei</label>
+      <input type="text" name="imei" maxlength="16">
+    </div>
+
+    <div class="field">
+      <label>Serial</label>
+      <input type="text" name="serial">
+    </div>
+
+    <div class="field">
+      <label>Etiqueta</label>
+      <input type="text" name="etiqueta">
+    </div>
+   </div>
+
+
+  <div class="field">
+    <label>Observação</label>
+    <textarea rows="2"></textarea>
+  </div>
+  </div>
+
+
+  <div class="ui button" tabindex="0">Cadastrar</div>
+</form>
+
+</div>
+
+	<div class="html ui top attached segment" style="padding-left: 30px">
+
+<table class="ui celled table" datatable [dtOptions]="dtOptions" >
+        <thead>
+            <tr>
+   				<th></th>
+                <th>Etiqueta</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Imei</th>
+                <th>Serial</th>
+                <th>Unidade</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+            <tr>
+   				<th></th>
+                <th>Etiqueta</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Imei</th>
+                <th>Serial</th>
+                <th>Unidade</th>
+                <th>Status</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>

@@ -1,0 +1,104 @@
+<div class="column">
+    <div class="ui segment raised">
+        <div class="ui menu small top">
+            <a class="active item" data-tab="cadastro"><i class="icon edit sign"></i>Cadastrar</a>
+            <a class="item" data-tab="summary">Todos Cadastros</a>
+        </div>
+
+        <div class="ui active tab raised" data-tab="cadastro">
+            <div class="ui grid">
+                <div class="eight wide column">
+                    <div class="ui segment raised">
+                        <div class="ui top attached label">Empresas</div>
+
+                        <div class="ui grid">
+                            <div class="sixteen wide column">
+                                <div class="ui warning small form">
+
+                                    <div class="field">
+                                        <div class="field">
+                                            <label>Razão Social</label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="one fields">
+                                        <div class="field">
+                                            <label>Nome Fantasia</label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="one fields">
+                                        <div class="field">
+                                            <label>CNPJ</label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="fields">
+                                        <div class="ten wide field">
+                                            <label>Logradouro</label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                        <div class="six wide field">
+                                            <label>CEP</label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="fields">
+                                        <div class="five wide field">
+                                            <label>Bairro</label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                        <div class="five wide field">
+                                            <label>Cidade</label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                        <div class="six wide field">
+                                            <label>Estado</label>
+                                            <select class="ui fluid search dropdown" name="estado"  required>
+                                                <option value=""></option>
+                                                <option value="AC">Acre</option>
+                                                <option value="AL">Alagoas</option>
+                                                <option value="AP">Amapá</option>
+                                                <option value="AM">Amazonas</option>
+                                                <option value="BA">Bahia</option>
+                                                <option value="CE">Ceará</option>
+                                                <option value="DF">Distrito Federal</option>
+                                                <option value="ES">Espírito Santo</option>
+                                                <option value="GO">Goiás</option>
+                                                <option value="MA">Maranhão</option>
+                                                <option value="MT">Mato Grosso</option>
+                                                <option value="MS">Mato Grosso do Sul</option>
+                                                <option value="MG">Minas Gerais</option>
+                                                <option value="PA">Pará</option>
+                                                <option value="PB">Paraíba</option>
+                                                <option value="PR">Paraná</option>
+                                                <option value="PE">Pernambuco</option>
+                                                <option value="PI">Piauí</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="RN">Rio Grande do Norte</option>
+                                                <option value="RS">Rio Grande do Sul</option>
+                                                <option value="RO">Rondônia</option>
+                                                <option value="RR">Roraima</option>
+                                                <option value="SC">Santa Catarina</option>
+                                                <option value="SP">São Paulo</option>
+                                                <option value="SE">Sergipe</option>
+                                                <option value="TO">Tocantins</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="ui submit button">Submit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight wide column"></div>
+            </div>
+        </div>
+        <div class="ui tab" data-tab="summary">
+        	<table datatable [dtOptions]="dtEmpresa" class="ui selectable celled small table" style="width: 100%"></table>
+    	</div>
+    </div>
+
+</div>

@@ -1,0 +1,60 @@
+<div class="content p-3">
+
+<div class="ui two column grid">
+  <div class="column">
+	<div class="ui card" style="width: 100%">
+	  <div class="content bg-ligth">
+	    <div class="header text-muted"><i class="fas fa-table"></i> Tipos de Recurso</div>
+	  </div>
+	  <div class="content" style="padding: 10px 10px 10px 10px;">
+	  	<table datatable [dtOptions]="dtOptions_recurso" class="ui selectable celled table" style="width: 100%"></table>
+	  </div>
+
+	</div>
+  </div>
+  <div class="column">
+
+	<div class="ui card" style="width: 100%">
+	  <div class="content bg-ligth">
+	    <div class="header text-muted"><i class="fas fa-table"></i> Marcas</div>
+	  </div>
+	  <div class="content" style="padding: 10px 0px 10px 30px;">
+		<table class="ui celled table">
+		    <thead>
+		        <tr>
+					<th></th>
+		            <th>Id</th>
+		            <th>Marca</th>
+		            <th></th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		    </tbody>
+		</table>
+	  </div>
+
+	</div>
+  </div>
+
+</div>
+
+<div class="ui two stackable cards">
+
+
+
+
+</div>
+
+<div class="ui one stackable cards">
+	<div class="ui card">
+	  <div class="content bg-ligth">
+	    <div class="header text-muted"><i class="fas fa-table"></i> Aparelhos Homologados</div>
+	  </div>
+	  <div class="content" style="padding: 10px 10px 10px 10px;">
+	  	<table datatable [dtOptions]="dtOptions_Homologados" class="ui celled table" style="width: 100%"></table>
+	  </div>
+
+	</div>
+</div>
+
+</div>

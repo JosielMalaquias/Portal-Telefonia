@@ -1,0 +1,30 @@
+<div class="ui middle aligned center aligned grid" style="margin-top: 10%">
+  <div class="column">
+    <h2 class="ui image header">
+      <div class="content">
+        Log-in
+      </div>
+    </h2>
+    <form class="ui large form" (submit)="LoginUser($event)">
+      <div class="ui raised stacked secondary  segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="username" id="username" placeholder="">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" id="password" placeholder="">
+          </div>
+        </div>
+        <input type="submit" value="Login" class="ui fluid large grey submit button"/>
+      </div>
+
+      <div class="ui error message"></div>
+
+    </form>
+
+  </div>
+</div>
